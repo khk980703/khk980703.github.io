@@ -31,20 +31,6 @@ a {
   border-bottom: #adcbff solid 2px;
 }
 
-@media (max-width: 991px) {
-  .heading {
-    height: 40px;
-    padding: 10px 10px 10px 20px;
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 767px) {
-  .heading {
-    font-size: 20px;
-  }
-}
-
 /* Main Section */
 
 .main {
@@ -61,7 +47,6 @@ a {
   width: 25%;
   margin: 0;
   padding: 32px 0% 3% 0%;
-  font-size: 14px;
   border-right: #cccccc solid 2px;
 }
 
@@ -69,6 +54,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 3% 10% 3% 10%;
+  font-size: 15px;
 }
 
 .nav svg {
@@ -83,19 +69,6 @@ a {
 
 .selected {
   background: #ffd3ed;
-}
-
-@media (min-width: 1460px) {
-  .nav {
-    width: 298px;
-    padding: 32px 0 0 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .nav {
-    width: 215px;
-  }
 }
 
 /* Contents CSS */
@@ -123,4 +96,33 @@ a {
   background-color: #fff;
   color: #333;
   font-weight: 400;
+}
+
+@media (max-width: 991px) {
+  .heading {
+    height: 40px;
+    padding: 10px 10px 10px 20px;
+    font-size: 22px;
+  }
+
+  .nav {
+    width: 215px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1460px) {
+  .nav {
+    width: 298px;
+    padding: 32px 0 0 0;
+  }
 }
