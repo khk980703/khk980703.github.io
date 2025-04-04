@@ -1,0 +1,260 @@
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>David's blog</title>
+      <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+      <link
+        href="https://fonts.cdnfonts.com/css/product-sans"
+        rel="stylesheet"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body>
+      <div class="container">
+        <div class="heading">
+          <img src="../img/myself2.jpg" alt="David's face" />
+          David's Page
+        </div>
+        <div class="main">
+          <div class="nav">
+            <div class="sticky">
+              <a href="../index.html">Home</a>
+              <a class="selected" href="./blog.html">
+                Blog
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="../intro/intro.html">
+                About Myself
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contents">
+            <div class="wrapper">
+              <h1>Blog</h1>
+            </div>
+            <div class="blog">
+              <div class="blog-section">
+                <h1>Position Property</h1>
+                <p>
+                  The position property specifically allows you to deal with the
+                  position of the element in different ways. It can be adjusted
+                  by the top, bottom, left, and right properties.
+                </p>
+                <br />
+                <p>There are 5 different values used with position property:</p>
+                <br />
+                <ul style="margin-left: 3%">
+                  <li style="color: #666">static</li>
+                  <li style="color: #666">relative</li>
+                  <li style="color: #666">absolute</li>
+                  <li style="color: #666">fixed</li>
+                  <li style="color: #666">sticky</li>
+                </ul>
+                <br />
+                <p>Each value has unique behaviors.</p>
+              </div>
+              <br />
+              <div class="blog-section">
+                <h2>position: static;</h2>
+                <p>By default, HTML elements are positioned as static.</p>
+                <p>
+                  Elements with this value are not affected by any of the
+                  adjusting properties (top, bottom, left, and right).
+                </p>
+                <p>
+                  Instead, they are positioned naturally, following the rest of
+                  the structure in HTML.
+                </p>
+                <br />
+                <p style="font-style: italic">Example:</p>
+                <div class="blog-section-image">
+                  <div class="blog-section-example-layout">
+                    <p>🟥 static - top: 0px, left: 0px</p>
+                    <img src="../img/static1.png" alt="example pic..." />
+                  </div>
+                  <div class="blog-section-example-layout">
+                    <p>🟥 static - top: 200px, left: 200px</p>
+                    <img src="../img/static1.png" alt="example pic..." />
+                  </div>
+                </div>
+              </div>
+              <div class="blog-section">
+                <h2>position: relative;</h2>
+                <p>
+                  Relative position can be adjusted with the adjusting
+                  properties.
+                </p>
+                <p>
+                  Just like static value, it follows the flow of the HTML
+                  structure at the start, but can be re-positioned.
+                </p>
+                <p>
+                  Even if it was re-positioned, other contents treat it as a
+                  static position ignoring the adjustment.
+                </p>
+                <br />
+                <p style="font-style: italic">Example:</p>
+                <div class="blog-section-image">
+                  <div class="blog-section-example-layout">
+                    <p>🟨 relative - top: 0px, left: 0px</p>
+                    <img src="../img/relative1.png" alt="example pic..." />
+                  </div>
+                  <div class="blog-section-example-layout">
+                    <p>🟨 relative - top: 200px, left: 200px</p>
+                    <img src="../img/relative2.png" alt="example pic..." />
+                  </div>
+                </div>
+              </div>
+              <div class="blog-section">
+                <h2>position: absolute;</h2>
+                <p>
+                  Absolute position can also be adjustable just like relative
+                  position.
+                </p>
+                <p>
+                  However, the absolute position is affected by its parent
+                  element as well.
+                </p>
+                <p>
+                  If an absolute position element has a parent element with a
+                  relative position, when the relative position element gets
+                  adjusted, the absolute position element also gets adjusted
+                  with the same amount.
+                </p>
+                <p>
+                  So, the parent adjustment is added to its original adjustment.
+                </p>
+                <br />
+                <p style="font-style: italic">Example:</p>
+                <div class="blog-section-image">
+                  <div class="blog-section-example-layout">
+                    <p>🟨 relative - top: 0px, left: 0px</p>
+                    <p>🟩 absolute - top: 0px, left: 0px</p>
+                    <img src="../img/absolute1.png" alt="example pic..." />
+                  </div>
+                  <div class="blog-section-example-layout">
+                    <p>🟨 relative - top: 200px, left: 200px</p>
+                    <p>🟩 absolute - top: 0px, left: 0px</p>
+                    <img src="../img/absolute2.png" alt="example pic..." />
+                  </div>
+                  <div class="blog-section-example-layout">
+                    <p>🟨 relative - top: 200px, left: 200px</p>
+                    <p>🟩 absolute - top: 100px, left: 100px</p>
+                    <img src="../img/absolute3.png" alt="example pic..." />
+                  </div>
+                </div>
+              </div>
+              <div class="blog-section">
+                <h2>position: fixed;</h2>
+                <p>
+                  Fixed position is a little special. It has a direct
+                  relationship with the window.
+                </p>
+                <p>
+                  It is always fixed in the position you have set. It does not
+                  get affected by any elements or scrolling.
+                </p>
+                <br />
+                <p style="font-style: italic">Example:</p>
+                <div class="blog-section-image">
+                  <div class="blog-section-example-layout">
+                    <p style="margin-left: 100px">
+                      fixed green box in the corner - scroll up
+                    </p>
+                    <img
+                      style="width: 300px; height: auto"
+                      src="../img/fixed1.png"
+                      alt="example pic..."
+                    />
+                  </div>
+                  <div class="blog-section-example-layout">
+                    <p style="margin-left: 100px">
+                      fixed green box in the corner - scroll down
+                    </p>
+                    <img
+                      style="width: 300px; height: auto"
+                      src="../img/fixed2.png"
+                      alt="example pic..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="blog-section">
+                <h2>position: sticky;</h2>
+                <p>
+                  Sticky position is a mixture of relative and fixed position.
+                </p>
+                <p>
+                  Just like fixed position, the sticky position does not leave
+                  the screen of a window. If you try scrolling too far, it get
+                  fixed in the position you have set.
+                </p>
+                <br />
+                <p style="font-style: italic">Example:</p>
+                <div class="blog-section-image">
+                  <div class="blog-section-example-layout">
+                    <p style="margin-left: 100px">
+                      sticky grey nav side bar - scroll up
+                    </p>
+                    <img
+                      style="width: 300px; height: auto"
+                      src="../img/sticky1.png"
+                      alt="example pic..."
+                    />
+                  </div>
+                  <div class="blog-section-example-layout">
+                    <p style="margin-left: 100px">
+                      sticky grey nav side bar - scroll down
+                    </p>
+                    <img
+                      style="width: 300px; height: auto"
+                      src="../img/sticky2.png"
+                      alt="example pic..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <p>
+                Reference:
+                <a href="https://www.w3schools.com/css/css_positioning.asp">
+                  w3schools
+                </a>
+                <a
+                  href="https://student-handbook.devacademy.life/foundations/curriculum/sprint-2/01-tech/t5-technical-blog"
+                >
+                  student-handbook.devacademy
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+</html>
