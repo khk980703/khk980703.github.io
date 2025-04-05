@@ -52,6 +52,7 @@
 .nav {
   display: flex;
   flex-direction: column;
+  min-width: 200px;
   background-color: #eeeeee;
   width: 25%;
   margin: 0;
@@ -93,7 +94,6 @@
   margin: 0;
   padding: 3% 3% 1.5% 3%;
   background-color: #fff;
-  overflow: visible;
 }
 
 .wrapper {
@@ -224,6 +224,9 @@
     width: 100%;
     padding: 0;
     border-bottom: #cccccc solid 2px;
+    border-right: none;
+    position: sticky;
+    top: 0;
   }
 
   .nav svg {
@@ -234,6 +237,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .contents {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 94%;
   }
 }
 
