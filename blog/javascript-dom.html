@@ -1,0 +1,286 @@
+<html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>David's blog</title>
+      <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+      <link
+        href="https://fonts.cdnfonts.com/css/product-sans"
+        rel="stylesheet"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body>
+      <div class="container">
+        <div class="heading">
+          <img src="../img/myself2.jpg" alt="David's face" />
+          David's Page
+        </div>
+        <div class="main">
+          <div class="nav">
+            <div class="sticky">
+              <a href="../index.html">Home</a>
+              <a class="selected" href="./blog.html">
+                Blog
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="../intro/intro.html">
+                About Myself
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contents">
+            <div class="wrapper">
+              <h1>Blog</h1>
+            </div>
+            <div class="blog">
+              <div class="blog-section">
+                <h1>JavaScript</h1>
+                <br />
+                <h2>
+                  What is JavaScript and its relationship to HTML and CSS.
+                </h2>
+                <p>
+                  JavaScript could be referenced as the brain of a webpage. In a
+                  simple term, it assists with page movement, response, and all
+                  other actions that need to be taken.
+                </p>
+                <br />
+                <ul style="margin-left: 3%">
+                  <li style="color: #666; font-size: 14px">
+                    HTML shows what's on the page.
+                  </li>
+                  <li style="color: #666; font-size: 14px">
+                    CSS makes it pretty.
+                  </li>
+                  <li style="color: #666; font-size: 14px">
+                    JavaScript makes it dynamic.
+                  </li>
+                </ul>
+                <br /><br />
+                <h2>What is Control Flow?</h2>
+                <p>
+                  Control Flow is the order of the structure of statements that
+                  needs to be followed. It's like a routine of whatever you are
+                  doing.
+                </p>
+                <p>
+                  For example, if you have a routine after waking up, everything
+                  would be fine if followed. However, if you are off a little
+                  from your routine, usually something goes wrong.
+                </p>
+                <br /><br />
+                <h2>What is Loops?</h2>
+                <p>
+                  Loops are a sequence of instructions that is continually
+                  repeated until a specific condition is reached.
+                </p>
+                <p>
+                  For example, if you were to run 2 kilometers on a running
+                  track that is 400m long in an oval shape, a sequence of
+                  instructions could be referred to the action of running and a
+                  certain condition would be how long you need to run, in this
+                  case 2 kilometers.
+                </p>
+                <br /><br />
+                <h2>What is DOM?</h2>
+                <p>
+                  DOM is an abbreviation of Document Object Model. It's there to
+                  help interact with all the HTML elements.
+                </p>
+                <p>
+                  DOM is a copy of things inside the HTML document represented
+                  in an object type.
+                </p>
+                <p>
+                  This way, it is easier to access the HTML elements when
+                  dealing with JaveScript. Browsers provide a 'document'
+                  JavaScript object with a large number of properties to
+                  interact in all sorts of ways.
+                </p>
+                <p>You can briefly visualize the document as a tree diagram:</p>
+                <br />
+                <div class="blog-section-image">
+                  <div class="blog-section-example-layout">
+                    <img
+                      style="width: 450px"
+                      src="../img/dom-tree.png"
+                      alt="example pic..."
+                    />
+                  </div>
+                </div>
+                <br /><br />
+                <h2>How to access HTML elements using the DOM.</h2>
+                <p>
+                  You can access HTML elements through the object 'document'.
+                  Just like how you normally access an object type, you would
+                  follow the structure 'document.___' way.
+                </p>
+                <p>The three most common things to query by are:</p>
+                <ul style="margin-left: 5%">
+                  <li style="color: #666; font-size: 14px">
+                    by tag name (element name, such as 'p' or 'div')
+                  </li>
+                  <li style="color: #666; font-size: 14px">
+                    by class name (class attribute e.g. class="container")
+                  </li>
+                  <li style="color: #666; font-size: 14px">
+                    by id (id attribute e.g. id="logo")
+                  </li>
+                </ul>
+                <br />
+                <p>
+                  The three different methods are used in different situations.
+                  But, ideally, to access individual elements in the HTML
+                  document, id is the most common way to go.
+                </p>
+                <p>
+                  On the other hand, if you want to access multiple elements at
+                  once, you would access them with a tag or class name.
+                </p>
+                <p>
+                  The way you can access these is through
+                  'document.querySelector("__")', and you receive the
+                  information related to the query you selected in the object
+                  type.
+                </p>
+                <br /><br />
+                <h2>How to use HTML elements using the DOM.</h2>
+                <p>
+                  You can manipulate the elements in the same way you use an
+                  object type variable. We can use '.innerHTML' attribute to
+                  both get and set the inner HTML tags.
+                </p>
+                <p>For example:</p>
+                <ul style="margin-left: 5%">
+                  <li style="color: #666; font-size: 14px">
+                    'let value = document.querySelector('__').innerHTML' will
+                    set the variable 'value' to the inner HTML value of
+                    whichever query is selected.
+                  </li>
+                  <li style="color: #666; font-size: 14px">
+                    'document.querySelector('__').innerHTML = "I have changed
+                    the value!"' will change the inner HTML value of whichever
+                    query that is selected to 'I have changed the value!'.
+                  </li>
+                </ul>
+                <br />
+                <p>
+                  We need to note that selecting a class or the tag, will only
+                  access the first element of the HTML document. In order to
+                  select all the queries, you would use '.querySelectorAll'
+                  instead.
+                </p>
+                <br /><br />
+                <h2>More examples of things you can do with DOM.</h2>
+                <p>
+                  There are a few more commonly used attributes through the
+                  'querySelector' object like '.setAttribute' and
+                  '.addEventListener'.
+                </p>
+                <br />
+                <h2 style="font-size: 16px">.setAttribute()</h2>
+                <p>
+                  This helps us modify a few things like the style of the
+                  element, src, or href.
+                </p>
+                <p>For example:</p>
+                <ul style="margin-left: 5%">
+                  <li style="color: #666; font-size: 14px">
+                    'exampleSpan.setAttribute('style', 'color: red; font-weight:
+                    bold')' modifies the 'exampleSpan' with the style specified
+                    in the 'setAttribute' bracket.
+                  </li>
+                </ul>
+                <br />
+                <h2 style="font-size: 16px">.addEventListener()</h2>
+                <p>
+                  There are many ways to use the 'addEventListener'. This is the
+                  main way to interact with the click, keystrokes, mouse moves,
+                  and more.
+                </p>
+                <p>
+                  The 'addEventListener' has the attribute 'event' to
+                  specifically achieve what you want to do.
+                </p>
+                <p>For example:</p>
+                <ul style="margin-left: 5%">
+                  <li style="color: #666; font-size: 14px">
+                    document.querySelector('#test-button').addEventListener('click',
+                    (event) => { console.log(event.target) }) will follow the id
+                    query '#test-button' which can receive a button click, and
+                    once the action happens, it will have the accessibility to
+                    the inner HTML value of the button.
+                  </li>
+                </ul>
+                <br /><br />
+                <h2>What is an Array and objects?</h2>
+                <p>
+                  Array is like a tube container that you can store items into.
+                  Object is almost like an array but it can store additional
+                  details for each item.
+                </p>
+                <ul style="margin-left: 5%">
+                  <li style="color: #666; font-size: 14px">
+                    Array - It is used with square brackets '[]' and there are
+                    many methods you could interact with arrays like '.length',
+                    '.sort()', '.forEach()', and many more.
+                  </li>
+                  <li style="color: #666; font-size: 14px">
+                    Objects - It is used with curly brackets '{}' and it
+                    contains keys and values. For example, 'obj = {key1 :
+                    value1, key2 : value2}' and to access, 'obj.key1' or
+                    'obj[key1]' would give us 'val1'.
+                  </li>
+                </ul>
+                <br /><br />
+                <h2>What are functions?</h2>
+                <p>
+                  Functions are like recipes of foods. It is like a page of
+                  instructions which can be reused. It is helpful when your
+                  codes are repetitively used, you could simply premake a
+                  function and just use the function name to execute the
+                  instructions.
+                </p>
+                <br /><br />
+              </div>
+              <p>
+                Reference:
+                <a
+                  href="https://student-handbook.devacademy.life/foundations/curriculum/sprint-3/02-tech"
+                >
+                  student-handbook.devacademy
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+</html>
