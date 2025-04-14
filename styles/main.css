@@ -89,6 +89,21 @@
 
 /* Contents CSS */
 
+table {
+  border: #ccc solid 2px;
+}
+
+th {
+  color: #333;
+  border-bottom: #ccc solid 2px;
+  font-size: 18px;
+}
+
+td {
+  color: #666;
+  font-size: 14px;
+}
+
 .contents {
   width: 83.5%;
   margin: 0;
