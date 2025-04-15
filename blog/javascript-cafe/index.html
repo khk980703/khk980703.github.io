@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScript Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>JavaScript Café</h1>
+    <audio controls autoplay loop>
+      <source src="./cafe-noise-32940.mp3" />
+    </audio>
+    <div class="container">
+      <p id="whiteCoffee"></p>
+      <p id="blackCoffee"></p>
+      <p id="muffin"></p>
+      <p id="eggs"></p>
+      <p>----</p>
+      <p id="customerOrder">Customer Order:</p>
+      <div id="customEggs"></div>
+      <p id="customerMoney">Customer Money:</p>
+      <p id="noMoney"></p>
+      <p>----</p>
+      <p id="cash"></p>
+    </div>
+    <button class="button" id="customerButton">generate customer</button>
+    <button class="button" id="fillOrder">fill order</button>
+    <button class="button" id="refund" disabled>refund</button>
+    <div class="container" id="history"><b>History</b></div>
+    <script src="cafe.js"></script>
+  </body>
+</html>
